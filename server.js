@@ -8,7 +8,9 @@ import matchRoutes from "./routes/matchRoutes.js";
 const port = process.env.PORT;
 const app = express();
 
-app.use(cors()); 
+app.use(cors({
+    origin: ['http://localhost:5173', 'https://kathy-codes.github.io']
+}));
 app.use(express.json());
 
 app.use("/api/users", userRoutes);
