@@ -9,7 +9,7 @@ const port = process.env.PORT;
 const app = express();
 
 app.use(cors({
-    origin: ['http://localhost:5173', 'https://kathy-codes.github.io']
+    origin: ['http://localhost:5173', 'https://lovebug-frontend.netlify.app/']
 }));
 app.use(express.json());
 
